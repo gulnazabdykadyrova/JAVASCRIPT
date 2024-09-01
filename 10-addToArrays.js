@@ -10,28 +10,22 @@
 
 // output = add_arrays(first_array,second_array); console.log(output); outputs [6,13,10,0];
 
-
-function add_arrays (arr1,arr2) {
-    let sum= arr1.map(function(num,index) {
-     return   num + arr2[index]
-       
-    })
-    return sum
-
-
+function add_arrays(arr1, arr2) {
+  let sum = arr1.map(function (num, index) {
+    return num + arr2[index];
+  });
+  return sum;
 }
 
-console.log(add_arrays([3,-5,15,4],[3,18,-5,-4]))
+console.log(add_arrays([3, -5, 15, 4], [3, 18, -5, -4]));
 
+function add_arrays2(arr1, arr2) {
+  let sumArr = [];
 
-function add_arrays2(arr1,arr2){
-    let sumArr=[];
-
-    for(let i=0; i<arr1.length; i++) {
-        sumArr.push(arr1[i]+arr2[i])
-    }
-    return sumArr
-
+  for (let i = 0; i < arr1.length; i++) {
+    sumArr.push(arr1[i] + arr2[i]);
+  }
+  return sumArr;
 }
 
-console.log(add_arrays2([3,-5,15,4],[3,18,-5,-4]))
+console.log(add_arrays2([3, -5, 15, 4], [3, 18, -5, -4]));

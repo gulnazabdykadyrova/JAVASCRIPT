@@ -19,23 +19,19 @@
 // Array of the longest strings, stored in the same order as in the inputArray.
 //For inputArray = ["aba", "aa", "ad", "vcd", "aba"]
 
-function allLongestStrings(inputArray){
-    let outputArr = [];
-    outputArr.push(inputArray[0])
+function allLongestStrings(inputArray) {
+  let outputArr = [];
+  outputArr.push(inputArray[0]);
 
-    for(let i = 1; i<inputArray.length; i++) {
-        
-        if(inputArray[i].length > outputArr[0].length ) {
-            outputArr = [];
-            outputArr.push(inputArray[i])
-        } else if(inputArray[i].length === outputArr[0].length ) {
-            outputArr.push(inputArray[i])
-        }
-        
-        
+  for (let i = 1; i < inputArray.length; i++) {
+    if (inputArray[i].length > outputArr[0].length) {
+      outputArr = [];
+      outputArr.push(inputArray[i]);
+    } else if (inputArray[i].length === outputArr[0].length) {
+      outputArr.push(inputArray[i]);
     }
-    return outputArr;
-
+  }
+  return outputArr;
 }
 
-console.log(allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]))
+console.log(allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]));
