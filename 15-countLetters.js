@@ -17,6 +17,7 @@ function countLetters(word) {
     consonants: 0,
   };
   for (let i = 0; i < word.length; i++) {
+    // checking if it is a letter (it might be a number or a symbol)
     if (word[i].toLowerCase() != word[i].toUpperCase())
       if (vowels.includes(word[i].toLowerCase())) {
         output.vowels += 1;
